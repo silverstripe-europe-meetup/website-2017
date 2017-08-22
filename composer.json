@@ -23,6 +23,10 @@
 	"config": {
 		"process-timeout": 600
 	},
+    "scripts": {
+        "dep": "dep",
+        "deploy": "dep deploy"
+    },
 	"prefer-stable": true,
 	"minimum-stability": "dev"
 }
