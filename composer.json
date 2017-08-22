@@ -25,7 +25,8 @@
 	},
     "scripts": {
         "dep": "dep",
-        "deploy": "dep deploy"
+        "deploy": "dep deploy",
+        "ssh": "dep ssh < /dev/tty"
     },
 	"prefer-stable": true,
 	"minimum-stability": "dev"

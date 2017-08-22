@@ -16,9 +16,10 @@ host('tb-silverstripe-01.twistedbytes.eu')
 set('bin/php', function () {
     return locateBinaryPath('php70');
 });
+
 set('default_stage', 'production');
 set('repository', 'https://github.com/silverstripe-europe-meetup/website-2017.git');
-set('git_tty', true); // [Optional] Allocate tty for git on first deployment
+set('git_tty', false); // [Optional] Allocate tty for git on first deployment; won't work on Windows
 
 // Silverstripe shared dirs
 set('shared_dirs', [
