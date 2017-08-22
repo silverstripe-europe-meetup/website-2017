@@ -1,0 +1,26 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+#  theme: 'stripecon'
+  global_key: '$CurrentReadingMode, $CurrentUser.ID, $CurrentLocale'
+
+
+---
+Only:
+  environment: 'dev'
+---
+DebugBar:
+  enable_storage: true
+  auto_debug: false
+  ajax: false
+  force_proxy: true
+  check_local_ip: false
+  find_source: true
+  enabled_in_admin: true
+  query_limit: 200
