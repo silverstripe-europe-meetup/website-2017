@@ -1,0 +1,10 @@
+---
+Name: mysite-extensions
+After: 'framework/*','cms/*'
+---
+SiteConfig:
+  extensions:
+    - 'mysite\SiteConfigExtension'
+LeftAndMain:
+  extensions:
+    - 'mysite\LeftAndMainExtension'

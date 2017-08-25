@@ -3,12 +3,19 @@
 global $project;
 $project = 'mysite';
 
-global $database;
-$database = '';
+// use the _ss_environment.php file for configuration
+require_once ('conf/ConfigureFromEnv.php');
 
-require_once 'conf/ConfigureFromEnv.php';
+// remove the auto generated SS_ prefix that gets added if database is auto detected
+global $databaseConfig;
+$databaseConfig['database'] = str_replace('SS_', '', $databaseConfig['database']);
 
-// Set the site locale
+
+// set default language
 i18n::set_locale('en_US');
 
-HtmlEditorConfig::get('cms')->insertButtonsAfter('visualaid', 'removeformat');
+// Force redirect to www
+Director::forceWWW();
+
+define('PROJECT_THIRDPARTY_DIR', project() . '/thirdparty');
+define('PROJECT_THIRDPARTY_PATH', BASE_PATH . '/' . PROJECT_THIRDPARTY_DIR);

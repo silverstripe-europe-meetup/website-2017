@@ -1,0 +1,9 @@
+@import "config";
+
+.mysite-Block-PageSectionGroup {
+	> .grid-column-container > .grid-column-container-inner {
+		padding-top: ($line-height * 2);
+		padding-bottom: $line-height;
+		margin-top: gutter() !important;
+	}
+}

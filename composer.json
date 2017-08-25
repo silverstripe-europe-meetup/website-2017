@@ -1,33 +1,31 @@
 {
-	"name": "silverstripe-europe-meetup/website-2017",
-	"description": "Website for StripeCon 2017 in Malta",
 	"require": {
-		"php": ">=7.0.0",
-		"silverstripe/cms": "^3.6.0",
-		"silverstripe/framework": "^3.6.0",
-		"silverstripe/siteconfig": "^3.6.0",
-        "silverstripe/googlesitemaps": "^1.6.0"
+		"php": ">=5.4",
+		"silverstripe/cms": "^3.6",
+		"silverstripe/framework": "^3.6",
+		"silverstripe/googlesitemaps": "*",
+		"lrc/silverstripe-link-field": "*",
+		"zauberfisch/silverstripe-better-requirements": "*",
+		"symbiote/silverstripe-gridfieldextensions": "*",
+		"unclecheese/betterbuttons": "*",
+		"unclecheese/display-logic": "*",
+		"zauberfisch/silverstripe-page-builder": "^2"
 	},
 	"require-dev": {
-		"phpunit/PHPUnit": "~3.7@stable",
-        "zauberfisch/silverstripe-better-i18n": "dev-master",
-		"lekoala/silverstripe-debugbar": "^1.0",
-        "axyr/silverstripe-ideannotator": "^2.0.7",
+		"phpunit/phpunit": "3.7.*",
+		"zauberfisch/silverstripe-better-i18n": "*",
+		"axyr/silverstripe-ideannotator": "*",
+		"lekoala/silverstripe-debugbar": "*",
 		"deployer/deployer": "^5.1.3"
-	},
-	"extra": {
-		"branch-alias": {
-			"3.x-dev": "3.6.x-dev"
-		}
 	},
 	"config": {
 		"process-timeout": 600
 	},
-    "scripts": {
-        "dep": "dep",
-        "deploy": "dep deploy",
-        "ssh": "dep ssh < /dev/tty"
-    },
+	"minimum-stability": "dev",
 	"prefer-stable": true,
-	"minimum-stability": "dev"
+	"scripts": {
+		"dep": "dep",
+		"deploy": "dep deploy",
+		"ssh": "dep ssh < /dev/tty"
+	}
 }

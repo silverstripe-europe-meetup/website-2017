@@ -1,0 +1,72 @@
+@import "config";
+
+@mixin grid-element($type: desktop) {
+	@for $i from 1 through 12 {
+		@for $j from $i through 12 {
+			.grid-column.grid-column-#{$type}-#{$i}.grid-column-#{$type}-context-#{$j} {
+				margin-bottom: gutter($j);
+				@include span($i of $j);
+			}
+		}
+	}
+	.grid-column.grid-column.grid-#{$type}-last {
+		margin-right: 0;
+		float: right;
+	}
+}
+
+
+.page-builder-grid {
+	$grid-tablet: 500px;
+	$grid-desktop: 900px;
+	
+	.grid-column-top-level {
+		//@include container();
+		//outline: 1px solid $color-petrol;
+		> .grid-column-container {
+			@include container();
+		}
+		> .grid-column-container > .grid-column-container-inner {
+			padding-right: $container-padding;
+			padding-left: $container-padding;
+			//outline: 1px solid $color-green;
+			//margin: 0 0 gutter();
+		}
+		.grid-column-container-inner {
+			//overflow: hidden;
+			@include susy-clearfix;
+		}
+		@include breakpoint-with-fallback($grid-tablet) {
+			.grid-tablet-clear {
+				clear: both;
+			}
+			@include grid-element(tablet);
+		}
+		@include breakpoint-with-fallback($grid-desktop) {
+			.grid-column.grid-column.grid-tablet-last {
+				margin-right: auto;
+				float: left;
+			}
+			.grid-tablet-clear {
+				clear: none;
+			}
+			.grid-desktop-clear {
+				clear: both;
+			}
+			@include grid-element();
+		}
+		.grid-column {
+			//margin: 0 0 gutter();
+			padding-bottom: 1px;
+			//outline: 1px solid $color-pink;
+			
+			&.grid-column-group {
+				margin-bottom: 0 !important;
+			}
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	
+}

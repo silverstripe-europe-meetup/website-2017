@@ -1,0 +1,16 @@
+@import "config";
+
+.ContentElement-Text {
+	&.grid-column-top-level {
+		width: auto !important;
+		max-width: none;
+	}
+	
+	div.content {
+		padding: 0 0 1px;
+		
+		&:after {
+		}
+		//margin: 0 0 ($line-height * -1);
+	}
+}

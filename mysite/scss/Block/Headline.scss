@@ -1,0 +1,35 @@
+@import "config";
+
+.mysite-Block-Headline {
+	text-align: center;
+	
+	span {
+		display: block;
+		
+		&.pre-title {
+			font-size: .6em;
+			margin: 0 0 4px;
+			font-weight: 300;
+			opacity: .7;
+			
+			&:before, &:after {
+				content: '\00B7';
+				margin: 0 4px;
+			}
+		}
+		&.title {
+			@include breakpoint-with-fallback(600px) {
+				font-size: 1.6em;
+				@include text-shadow(1px 1px 3px rgba(#000, 0.25));
+			}
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 auto;
+		max-width: 700px;
+		font-weight: 700;
+	}
+	h1, h2 {
+		text-transform: uppercase;
+	}
+}

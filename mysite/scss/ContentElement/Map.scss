@@ -1,0 +1,57 @@
+@import "config";
+
+.ContentElement-Map {
+	&.grid-column-top-level {
+		.grid-column-container {
+			margin: 0;
+			max-width: none;
+			width: auto;
+			padding: 0;
+			
+			.grid-column-container-inner {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				
+				.content-container {
+					.container .container-inner {
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+					.content {
+						position: absolute;
+						z-index: 80;
+						color: $color-blue-dark;
+						padding: ($line-height + 10px) ($line-height + 10px) 10px;
+						background: rgba($color-white, .8);
+						@include border-radius(3px);
+						//top: 50%;
+						//@include translateY(-50%);
+						top: 50px;
+						
+						h2 {
+							font-weight: 700;
+							@include text-shadow(1px 1px 3px rgba(#000, 0.35));
+							color: $color-blue-dark;
+							margin: 0;
+							text-transform: uppercase;
+							line-height: 1;
+						}
+					}
+				}
+				.map-container {
+					.map {
+						height: 600px;
+					}
+					.map-markers {
+						display: none;
+					}
+				}
+				.map-markers-popup-content {
+					max-width: 300px;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}

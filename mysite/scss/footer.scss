@@ -1,0 +1,78 @@
+@import "config";
+
+footer {
+	background: $color-blue-dark;
+	color: #FFF;
+	
+	.container .container-inner {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	a {
+		color: $color-pink;
+		text-decoration: none;
+		
+		img {
+			border: 0;
+		}
+	}
+	ul {
+		list-style: square;
+	}
+	.footer-top {
+		padding: 10px;
+		line-height: 50px;
+		
+		.left-column {
+			img {
+				border: 0;
+				height: 50px;
+			}
+		}
+		.right-column {
+			text-align: right;
+			display: none;
+			
+			//.social {
+			//	float: right;
+			//
+			//	a {
+			//		padding: 0 0 0 15px;
+			//		color: #FFF;
+			//	}
+			//}
+		}
+	}
+	.footer-main {
+		padding: 10px;
+		@include rem((font-size: 16px));
+		
+		.container-inner {
+			padding-bottom: 2px;
+			text-align: justify;
+			
+			&:before {
+				border-bottom: 1px solid $color-blue;
+				height: 1px;
+				display: block;
+				content: '';
+				margin: -40px 0 20px;
+			}
+		}
+	}
+	.left-column,
+	.right-column {
+		@include span(full);
+	}
+	@include breakpoint-with-fallback(600px) {
+		.left-column {
+			@include span(6);
+		}
+		.right-column {
+			@include span(6 last);
+		}
+		.footer-top .right-column {
+			display: block;
+		}
+	}
+}

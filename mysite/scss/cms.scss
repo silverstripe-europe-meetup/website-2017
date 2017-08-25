@@ -1,0 +1,26 @@
+@import "config";
+
+.chzn-container {
+	min-width: 250px;
+}
+
+.fieldholder-small div.treedropdown {
+	min-width: 250px;
+	
+	.treedropdownfield-title {
+		float: none;
+		display: block;
+	}
+	.treedropdownfield-toggle-panel-link {
+		position: absolute;
+		width: 24px;
+		top: 0;
+		right: 0;
+		//height: 23px;
+		//padding-bottom: 0;
+	}
+}
+
+.cms .ss-gridfield {
+	overflow-x: visible;
+}

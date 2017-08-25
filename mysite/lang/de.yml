@@ -1,0 +1,92 @@
+de:
+  HomePage:
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Home Pages'
+    __SINGULARNAME: 'Home Page'
+  Page:
+    __BackToTop: 'back to top'
+    DESCRIPTION: ''
+    PLURALNAME: Seiten
+    SINGULARNAME: Seite
+    db_ShowInFooter: 'Im Footer anzeigen?'
+  SectionBase:
+    DESCRIPTION: ''
+    __PLURALNAME: 'Section Bases'
+    __SINGULARNAME: 'Section Base'
+    db_BackgroundColor: Hintergrundfarbe
+    db_ShowTitle: 'Überschrift anzeigen?'
+    __db_Skew: Skew
+  SectionContact:
+    DESCRIPTION: ''
+    FormCity: Ort
+    FormEmail: E-Mail
+    FormFirstName: Vorname
+    FormHeadline: 'Formular Überschrift'
+    FormLastName: Nachname
+    FormMessage: Nachricht
+    FormPhone: Telefon
+    FormStreet: 'Straße'
+    FormSubmit: Absenden
+    FormTab: Formular
+    FormThanksContentHint: 'Diese Nachricht wird dem Benutzer nach dem absenden des Formulars angezeigt'
+    FormZIP: PLZ
+    PLURALNAME: 'Bereiche - Kontakt'
+    SINGULARNAME: 'Bereich - Kontakt'
+    db_FormEmail: 'E-Mail Adresse'
+    db_FormThanksContent: 'Danke Text'
+    db_MapLatitude: 'GPS Latitude'
+    db_MapLongitude: 'GPS Longitude'
+  SectionContent:
+    DESCRIPTION: ''
+    PLURALNAME: 'Bereiche - Text'
+    SINGULARNAME: 'Bereich - Text'
+    has_one_ContentImage: Bild
+  SectionContentBoxes:
+    DESCRIPTION: ''
+    PLURALNAME: 'Bereiche - Boxen'
+    SINGULARNAME: 'Bereich - Box'
+    db_BoxBackgroundColor: 'Box Hintergrundfarbe'
+    db_ItemsColumns: 'Boxen pro Zeile'
+    has_many_Items: Boxen
+  SectionContentBoxes_Box:
+    PLURALNAME: Boxen
+    SINGULARNAME: Box
+    db_ButtonTitle: 'Button Text'
+    db_Content: Inhalt
+    __db_Link: Link
+    __db_NewTab: 'New Tab'
+    __db_Sort: Sort
+    db_Title: Überschrift
+    has_one_Image: Bild
+    __has_one_SectionContentBoxes: 'Section Content Boxes'
+  SectionHolderPage:
+    DESCRIPTION: 'Seite die mehre Bereiche beinhaltet'
+    PLURALNAME: 'Bereiche Seiten'
+    SINGULARNAME: 'Bereiche Seite'
+  SectionJustImmo:
+    DESCRIPTION: ''
+    Filter: Suchen
+    PLURALNAME: 'Just Immo Seiten'
+    SINGULARNAME: 'Just Immo'
+  SectionJustImmoDetail:
+    __Details: Details
+  SectionJustImmoDetailForm:
+    Subject: 'Anfrage zu Object Nummer {ObjectNumber}'
+  SectionJustImmoFilterForm:
+    ObjectType: Objektarten
+    ObjectType_buero_praxen: 'Büro / Praxis'
+    ObjectType_hallen_lager_prod: 'Industrie / Gewerbe'
+    ObjectType_land_und_forstwirtschaft: 'Land und Forstwirtschaft'
+    ObjectType_wohnung: Wohnung
+    ObjectType_zinshaus_renditeobjekt: 'Zinshaus / Renditeobjekt'
+    PaymentTypeBuy: Kauf
+    PaymentTypeRent: Miete/Pacht
+    Submit: Suchen
+    ZIP: PLZ
+    ZIPAll: Alle
+  SectionJustImmoObject:
+    ObjectNumber: Objektnummer
+    Price: Preis
+    PriceNone: 'Preis auf Anfrage'
+    ReadMore: 'mehr ...'
+    SurfaceArea: Fläche

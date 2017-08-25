@@ -1,0 +1,56 @@
+en:
+  Page:
+    __BackToTop: 'back to top'
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: Pages
+    __SINGULARNAME: Page
+    __db_ShowInFooter: 'Show In Footer'
+  SectionBase:
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Section Bases'
+    __SINGULARNAME: 'Section Base'
+    __db_BackgroundColor: 'Background Color'
+    __db_ShowTitle: 'Show Title'
+    __db_Skew: Skew
+  SectionContact:
+    __DESCRIPTION: 'Generic content page'
+    __FormEmail: Email
+    FormFirstName: Firstname
+    FormLastName: Lastname
+    FormMessage: Message
+    __FormPhone: Phone
+    FormSubmit: Send
+    __FormTab: Form
+    __FormThanksContentHint: 'Message to show after form'
+    __PLURALNAME: 'Section Contacts'
+    __SINGULARNAME: 'Section Contact'
+    __db_FormEmail: 'Form Email'
+    __db_FormThanksContent: 'Form Thanks Content'
+    __db_MapLatitude: 'Map Latitude'
+    __db_MapLongitude: 'Map Longitude'
+  SectionContent:
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Section Contents'
+    __SINGULARNAME: 'Section Content'
+    __has_one_ContentImage: 'Content Image'
+  SectionContentBoxes:
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Section Content Boxess'
+    __SINGULARNAME: 'Section Content Boxes'
+    __db_BoxBackgroundColor: 'Box Background Color'
+    __db_ItemsColumns: 'Items Columns'
+    __has_many_Items: Items
+  SectionContentBoxes_Box:
+    __PLURALNAME: 'Section Content Boxes Boxs'
+    __SINGULARNAME: 'Section Content Boxes Box'
+    __db_ButtonTitle: 'Button Title'
+    __db_Content: Content
+    __db_Link: Link
+    __db_Sort: Sort
+    __db_Title: Title
+    __has_one_Image: Image
+    __has_one_SectionContentBoxes: 'Section Content Boxes'
+  SectionHolderPage:
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Section Holder Pages'
+    __SINGULARNAME: 'Section Holder Page'
