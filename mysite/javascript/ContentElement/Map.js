@@ -180,7 +180,7 @@
 					titleHTML = '<h5>' + title + '</h5>';
 				}
 				if (typeof iconURL !== 'undefined' && iconURL) {
-					config.icon = iconURL;
+					config.icon = iconURL + '?2017';
 				}
 				var marker = new google.maps.Marker(config);
 				if (typeof content !== 'undefined' && content) {
@@ -215,7 +215,6 @@
 			map.initializeMap(48.305, 14.285);
 			this.find('.map-marker').each(function () {
 				var marker = $(this);
-				console.log(marker.data('icon'));
 				map.addMapMarker(
 					marker.data('lat'),
 					marker.data('lng'),

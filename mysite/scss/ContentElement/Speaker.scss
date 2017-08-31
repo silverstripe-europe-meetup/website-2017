@@ -1,0 +1,30 @@
+@import "config";
+
+.ContentElement-Speaker {
+	text-align: center;
+	
+	.grid-column-inner {
+		padding: 20px 0;
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	h5 {
+		font-weight: 700;
+	}
+	.image {
+		margin: 0 0 $line-height;
+		
+		div {
+			height: 150px;
+			width: 150px;
+			background: center center no-repeat;
+			@include background-size(cover);
+			margin: 0 auto;
+			@include border-radius(50%);
+		}
+	}
+}

@@ -8,7 +8,7 @@ footer {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	a {
+	a, .typography a {
 		color: $color-pink;
 		text-decoration: none;
 		
@@ -16,7 +16,7 @@ footer {
 			border: 0;
 		}
 	}
-	ul {
+	ul,  .typography ul {
 		list-style: square;
 	}
 	.footer-top {

@@ -1,0 +1,36 @@
+@import "config";
+
+.ContentElement-Sponsor {
+	text-align: center;
+	
+	.grid-column-inner {
+		padding: 20px 0;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		
+		.image {
+			margin: 0 0 $line-height;
+			
+			div {
+				height: 150px;
+				background: center center no-repeat;
+				@include background-size(contain);
+				margin: 0 auto;
+			}
+		}
+		span.website {
+			text-decoration: underline;
+		}
+		&:hover {
+			span.website {
+				text-decoration: none;
+			}
+		}
+	}
+	
+	h5 {
+		font-weight: 700;
+	}
+}

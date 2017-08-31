@@ -43,6 +43,7 @@ header {
 	a {
 		color: #FFF;
 		text-decoration: none;
+		font-weight: 700;
 	}
 	.logo {
 		display: block;
@@ -54,7 +55,7 @@ header {
 			display: block;
 			@include hide-text(right);
 			height: 50px;
-			background: left center no-repeat image-url('logo.png');
+			background: left center no-repeat image-url('logo.png?2017');
 			@include background-size(contain);
 		}
 	}
