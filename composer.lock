@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a208b11fbd8f2326b1331bd13525072e",
+    "content-hash": "3bc26c74ca9cd2aa73d50b0f3bbc6063",
     "packages": [
         {
             "name": "composer/installers",
@@ -584,6 +584,48 @@
                 "silverstripe"
             ],
             "time": "2017-01-06T09:46:49+00:00"
+        },
+        {
+            "name": "wernerkrauss/silverstripe-piwik",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wernerkrauss/silverstripe-piwik.git",
+                "reference": "c3a32092d81b87fd31311542cd517c7a62e41287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wernerkrauss/silverstripe-piwik/zipball/c3a32092d81b87fd31311542cd517c7a62e41287",
+                "reference": "c3a32092d81b87fd31311542cd517c7a62e41287",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "piwik"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Werner Krauß",
+                    "email": "werner.krauss@netwerkstatt.at",
+                    "homepage": "http://www.netwerkstatt.at",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds piwik tracking code to your site",
+            "keywords": [
+                "extension",
+                "silverstripe"
+            ],
+            "time": "2016-03-16T09:01:42+00:00"
         },
         {
             "name": "zauberfisch/silverstripe-better-requirements",
@@ -2008,7 +2050,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-10-08T20:46:30+00:00"
+            "time": "2015-10-08 20:46:30"
         }
     ],
     "aliases": [],

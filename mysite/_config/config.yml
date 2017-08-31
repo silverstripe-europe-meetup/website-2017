@@ -10,6 +10,12 @@ SiteTree:
   create_default_pages: false
 Email:
   admin_email: 'info@stripecon.eu'
+
+PiwikExtension:
+  piwik_server: 'https://piwik.stripecon.eu'
+  piwik_site_id: 7
+
+
 ---
 Only:
   environment: 'dev'
