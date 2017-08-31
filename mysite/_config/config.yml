@@ -12,7 +12,7 @@ Email:
   admin_email: 'info@stripecon.eu'
 
 PiwikExtension:
-  piwik_server: '//piwik.stripecon.eu'
+  piwik_server: '//piwik.stripecon.eu/'
   piwik_site_id: 7
 
 
